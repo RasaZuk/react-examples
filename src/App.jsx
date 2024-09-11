@@ -1,6 +1,9 @@
-import ControlledInput from "./components/controlledInput/ControlledInput"
-import Counter from "./components/counter/Counter"
-import ToggleVisibility from "./components/toggleVisibility/ToggleVisibility"
+import CharacterCounter from "./components/CharacterCounter.jsx";
+import ControlledInput from "./components/ControlledInput.jsx";
+import Counter from "./components/Counter.jsx";
+import ToggleVisibility from "./components/ToggleVisibility.jsx";
+import TodoList from "./components/ToDoList.jsx";
+import ColorSwitcher from "./components/ColorSwitcher.jsx";
 
 
 function App() {
@@ -34,6 +37,7 @@ function App() {
    <div className="container">
     <ControlledInput />
    </div>
+
    <div>
     <h2>Toggle Visibility</h2>
     <h3>You are tasked with creating a component that toggles the visibility of a piece of text when a button is clicked</h3>
@@ -44,6 +48,42 @@ function App() {
    <div className="container">
     <ToggleVisibility/>
    </div>
+
+   <div>
+    <h2>Character counter</h2>
+    <h3>A simple Character Counter component that allows users to type in text and displays the number of characters in real-time.</h3>
+    <p>Create a textarea element for users to type in text</p>
+    <p>Display the character count below the textarea in real-time</p>
+    <p>Use the useState hook to manage the text state</p>
+   </div>
+   <div className="container">
+    <CharacterCounter/>
+   </div>
+
+   <div>
+    <h2>To Do List</h2>
+    <h3>creating a simple Todo List component that allows users to add new items to the list and delete items once they are completed</h3>
+    <p>An input field for adding new todo items</p>
+    <p>A button to submit the new todo item</p>
+    <p>Display the list of todo items</p>
+    <p>A delete button next to each todo item to remove it from the list</p>
+   </div>
+   <div className="container">
+    <TodoList/>
+   </div>
+
+   <div>
+    <h2>Color switcher</h2>
+    <h3>create a simple Color Switcher component that allows users to change the background color of a div by selecting a color from a dropdown list.</h3>
+    <p>Create a dropdown list with a few color options (e.g., red, blue, green, yellow)</p>
+    <p>When a color is selected from the dropdown, the background color of the div should change to the selected color</p>
+    </div>
+    <div className="container">
+      <ColorSwitcher/>
+    </div>
+   
+    
+
     
     </>
   )
